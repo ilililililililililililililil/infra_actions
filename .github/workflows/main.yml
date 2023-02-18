@@ -57,7 +57,7 @@ jobs:
         with:
           host: ${{ secrets.CLOUD_PRACTICUM_HOST }}
           username: ${{ secrets.CLOUD_PRACTICUM_USER }}
-          key: ${{ secrets.SSH_KEY_PRVT }}
+          key: ${{ secrets.SSH_KEY_2 }}
           script: |
             sudo docker pull ${{ secrets.DOCKER_USERNAME }}/infra
             sudo docker stop $(sudo docker ps -a -q)
